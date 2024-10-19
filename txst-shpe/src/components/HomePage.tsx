@@ -1,12 +1,54 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import img1 from '../images/IMG_0340.jpg';
+import img2 from '../images/IMG_2770.jpg';
+import img3 from '../images/IMG_9833.jpg';
+import img4 from '../images/IMG_9852.jpg';
+import img5 from '../images/J1A03015.jpeg';
+
+const slideshowImages = [img1, img2, img3, img4, img5];
+
 export default function HomePage() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === slideshowImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-800">
       <main className="flex-grow">
-        <section className="bg-gradient-to-r from-texas-maroon to-texas-gold py-20">
-          <div className="container mx-auto px-4 text-center">
+        <section className="relative bg-gradient-to-r from-texas-maroon to-texas-gold py-20">
+          {/* Slideshow */}
+          <div className="absolute inset-0 overflow-hidden">
+            {slideshowImages.map((image, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-1000 ${
+                  index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <img
+                  src={image}
+                  alt={`Slideshow image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+          
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-texas-maroon to-texas-gold opacity-75"></div>
+          
+          {/* Content */}
+          <div className="relative z-10 container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4 text-white">Texas State University SHPE</h1>
             <p className="text-xl mb-8 text-white">Empowering Hispanic Engineers to Realize Their Fullest Potential</p>
             <Link to="/join" className="bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded">

@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import img0 from '../images/image000001.jpg';
 import img1 from '../images/IMG_0340.jpg';
 import img2 from '../images/IMG_2770.jpg';
 import img3 from '../images/IMG_9833.jpg';
 import img4 from '../images/IMG_9852.jpg';
 import img5 from '../images/J1A03015.jpeg';
 
-const slideshowImages = [img1, img2, img3, img4, img5];
+const slideshowImages = [img0,img1, img2, img3, img4, img5];
 
 export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => 

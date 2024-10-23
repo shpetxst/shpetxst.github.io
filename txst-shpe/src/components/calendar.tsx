@@ -1,15 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function CalendarPage() {
-  const events = [
-    { date: '2024-03-15', title: 'General Meeting', description: 'Monthly general meeting for all SHPE members' },
-    { date: '2024-03-22', title: 'Resume Workshop', description: 'Learn how to craft an effective engineering resume' },
-    { date: '2024-04-05', title: 'Industry Panel', description: 'Q&A session with Hispanic professionals in STEM' },
-    { date: '2024-04-18', title: 'SHPEtinas Networking', description: 'Networking event for SHPEtinas members' },
-    { date: '2024-05-01', title: 'End of Year Celebration', description: 'Celebrate our achievements for the academic year' },
-  ];
-
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-800">
       <main className="flex-grow">
@@ -22,21 +13,14 @@ export default function CalendarPage() {
 
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">Upcoming Events</h2>
-            <div className="space-y-6">
-              {events.map((event, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow">
-                  <div className="flex justify-between items-center mb-4">
-                    <h3 className="text-xl font-semibold text-shpe-dark-blue">{event.title}</h3>
-                    <span className="text-gray-600">{event.date}</span>
-                  </div>
-                  <p className="mb-4">{event.description}</p>
-                  <Link to={`/event/${index}`} className="text-shpe-blue hover:underline">
-                    Event Details
-                  </Link>
-                </div>
-              ))}
-            </div>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=shpetxst%40gmail.com&ctz=America%2FChicago"
+              style={{ border: 0 }}
+              width="100%"
+              height="800px"
+              frameBorder="0"
+              scrolling="no"
+            ></iframe>
           </div>
         </section>
 

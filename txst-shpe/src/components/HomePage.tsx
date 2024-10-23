@@ -52,7 +52,7 @@ export default function HomePage() {
           <div className="relative z-10 container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4 text-white">Texas State University SHPE</h1>
             <p className="text-xl mb-8 text-white">Empowering Hispanic Engineers to Realize Their Fullest Potential</p>
-            <Link to="/join" className="bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded">
+            <Link to="https://forms.gle/UYSPTjJj1mcHYCdM6" className="bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded">
               Join Us
             </Link>
           </div>

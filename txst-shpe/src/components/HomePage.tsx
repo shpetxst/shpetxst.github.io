@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import img0 from '../images/image000001.jpg';
-import img1 from '../images/IMG_0340.jpg';
-import img2 from '../images/IMG_2770.jpg';
-import img3 from '../images/IMG_9833.jpg';
-import img4 from '../images/IMG_9852.jpg';
-import img5 from '../images/J1A03015.jpeg';
+import img0 from '../assets/images/image000001.jpg';
+import img1 from '../assets/images/IMG_0340.jpg';
+import img2 from '../assets/images/IMG_2770.jpg';
+import img3 from '../assets/images/IMG_9833.jpg';
+import img4 from '../assets/images/IMG_9852.jpg';
+import img5 from '../assets/images/J1A03015.jpeg';
 
 const slideshowImages = [img0,img1, img2, img3, img4, img5];
 
@@ -18,7 +18,7 @@ export default function HomePage() {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === slideshowImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 10000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);

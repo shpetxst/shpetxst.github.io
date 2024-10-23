@@ -23,16 +23,6 @@ export default function CalendarPage() {
             ></iframe>
           </div>
         </section>
-
-        <section className="bg-gray-100 py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Add to Your Calendar</h2>
-            <p className="mb-8">Want to stay up to date? Add our calendar.</p>
-            <a href="#" className="bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded">
-              Subscribe to Calendar
-            </a>
-          </div>
-        </section>
       </main>
     </div>
   );

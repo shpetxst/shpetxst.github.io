@@ -7,6 +7,7 @@ import img2 from '../assets/images/IMG_2770.jpg';
 import img3 from '../assets/images/IMG_9833.jpg';
 import img4 from '../assets/images/IMG_9852.jpg';
 import img5 from '../assets/images/J1A03015.jpeg';
+import homeimg from '../assets/images/IMG_1708.jpg'
 
 const slideshowImages = [img0,img1, img2, img3, img4, img5];
 
@@ -64,39 +65,41 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-2xl font-semibold mb-4 text-shpe-dark-blue">Our Mission</h3>
-                <p>SHPE changes lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness, access, support, and development.</p>
+                <p>
+                  At Texas State SHPE, we empower Hispanic students to excel in STEM by promoting education, innovation, 
+                  and professional growth. In alignment with the College of Science and Engineering, we foster an inclusive environment 
+                  where students gain the skills and knowledge necessary for successful careers in science, technology, engineering, 
+                  and mathematics, while addressing both regional and global challenges through innovation and research.
+                </p>
               </div>
+              <div>
+                <h3 className="text-2xl font-semibold mb-4 text-shpe-dark-blue">Our Vision</h3>
+                <p>
+                  We aim to be a cornerstone in the STEM community, where Hispanic engineers and scientists lead with influence and 
+                  innovation. We envision a world where our members are not only equipped to solve complex problems but are also leaders 
+                  in advancing technological and scientific literacy on a global scale.
+                </p>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mt-8">
               <div>
                 <h3 className="text-2xl font-semibold mb-4 text-shpe-dark-blue">Core Values</h3>
                 <ul className="list-disc list-inside">
-                  <li>Familia</li>
-                  <li>Service</li>
-                  <li>Education</li>
-                  <li>Resilience</li>
+                  <li><strong>Familia</strong> - We cultivate a welcoming and supportive community that values collaboration and growth.</li>
+                  <li><strong>Service</strong> - We are committed to serving society with integrity, empathy, and a dedication to solving real-world problems.</li>
+                  <li><strong>Education</strong> - We emphasize the importance of academic excellence and continuous learning, preparing students for successful careers in STEM fields.</li>
+                  <li><strong>Resilience</strong> - We empower our members to overcome challenges with optimism, creativity, and perseverance.</li>
                 </ul>
+              </div>
+              <div>
+                <img src={homeimg} alt="SHPE members collaborating" className="rounded-lg shadow-lg w-full"/>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="events" className="bg-gray-100 py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">Upcoming Events</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[1, 2, 3].map((_, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow">
-                  <h3 className="text-xl font-semibold mb-2 text-shpe-dark-blue">Event Title</h3>
-                  <p className="mb-4">Short description of the event goes here.</p>
-                  <Link to="/events" className="text-shpe-blue border border-shpe-blue hover:bg-shpe-blue hover:text-white font-bold py-2 px-4 rounded">
-                    Learn More
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
-        <section id="contact" className="py-20">
+        <section id="contact" className="bg-gray-100 py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Get in Touch</h2>
             <p className="mb-8">Have questions or want to learn more? Reach out to us!</p>

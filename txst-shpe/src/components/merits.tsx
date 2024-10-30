@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function MeritsPage() {
   const meritCategories = [
-    { title: 'Academic Excellence', description: 'Recognizing outstanding academic achievements' },
-    { title: 'Leadership', description: 'Honoring exceptional leadership within SHPE and beyond' },
-    { title: 'Community Service', description: 'Celebrating dedication to community outreach and volunteering' },
-    { title: 'Professional Development', description: 'Acknowledging efforts in career growth and skill enhancement' },
+    { title: 'What is the merit board?', description: 'The SHPE Merit Leaderboard is our way of recognizing and rewarding active members who contribute to our chapter’s success. The leaderboard will go off of a point system.' },
+    { title: 'What can I win after?', description: 'You could win exciting rewards like SHPE merchandise, gift cards, or special recognition at our events. It’s our way of saying thank you for your dedication and hard work.' },
+    { title: 'How can I earn points?', description: 'You can earn points by attending meetings, volunteering, participating in events, and taking on leadership roles. The more involved you are, the higher your score will be on the leaderboard.' },
+    { title: 'How can I enter?', description: 'Every dues paying SHPE member is automatically enrolled! Just participate in chapter activities, and your points will be tracked. You can check your progress at every general meeting to see how you’re doing.' },
   ];
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-800">
       <main className="flex-grow">
+
         <section className="bg-gradient-to-r from-texas-maroon to-texas-gold py-20">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4 text-white">SHPE Merits</h1>
@@ -21,7 +21,15 @@ export default function MeritsPage() {
 
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">Merit Categories</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">Current Merit board</h2>
+            {/* iframe for keepthescore embed here*/}
+            <p>Check back soon to see your progress!</p>
+          </div>
+        </section>
+
+        <section className="bg-gray-100 py-20">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">We want to reward our members, here&apos;s how.</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {meritCategories.map((category, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow">
@@ -33,25 +41,6 @@ export default function MeritsPage() {
           </div>
         </section>
 
-        <section className="bg-gray-100 py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Recent Merit Recipients</h2>
-            <p className="mb-8">Congratulations to our recent merit recipients for their outstanding achievements!</p>
-            <Link to="/recipients" className="bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded">
-              View Recipients
-            </Link>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Nominate a Member</h2>
-            <p  className="mb-8">Know someone who deserves recognition? Nominate them for a SHPE merit!</p>
-            <Link to="/nominate" className="bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded">
-              Submit Nomination
-            </Link>
-          </div>
-        </section>
       </main>
     </div>
   );

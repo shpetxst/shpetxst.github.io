@@ -2,19 +2,19 @@ import React from "react";
 
 export default function OfficersPage() {
   const officers = [
-    { name: "Sean Iruegas", position: "President", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Sean Iruegas", position: "President", major:"Major in Mechanical Engineering Technology", class:"Class of '25", image: "/placeholder.svg?height=200&width=200" },
     { name: "Maresa ", position: "Vice President", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
     { name: "Alberto Rodriguez", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Aldo Guerrero", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Aldo Guerrero", position: "Director of Information", major:"Major in Computer Science", class:"Class of '25", image: "/placeholder.svg?height=200&width=200" },
     { name: "Desy Vasquez", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
     { name: "Edwin Vazquez", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Gabe Ciaburri", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Jimena", position: "Assistant Officer", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Junior", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Justin Villaseñor", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Gabriel Ciaburri", position: "Chapter Development Director", major:"Major in Computer Science", class:"Class of '25", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Jimena Gonzalez", position: "Assistant Officer", major:"Major in Industrial Engineering", class:"Class of '26", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Junior Segura-Ontiveros", position: "Secretary", major:"Major in Manufacturing Engineering", class:"Class of '26", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Justin Villaseñor", position: "Media Director", major:"Major in Computer Science", class:"Class of '25", image: "/placeholder.svg?height=200&width=200" },
     { name: "Noemy Cerevantes", position: "pos", major:"Major in ", class:"Class of '", image: "/placeholder.svg?height=200&width=200" },
     { name: "Thomas Mendoza", position: "Assistant Officer", major:"Major in Computer Science", class:"Class of '26", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Xaritzy Cadena", position: "pos", major:"Major in ", class:"Class of ' ", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Xaritzy Cadena", position: "Fundraiser Director", major:"Major in Industrial Engineering", class:"Class of '25", image: "/placeholder.svg?height=200&width=200" },
 
   ];
 

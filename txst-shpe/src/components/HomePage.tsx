@@ -9,8 +9,17 @@ import img4 from '../assets/images/IMG_9852.jpg';
 import img5 from '../assets/images/J1A03015.jpeg';
 import homeimg from '../assets/images/IMG_1708.jpg'
 
-const slideshowImages = [img0,img1, img2, img3, img4, img5];
+// Import recent Instagram post images
+import postImg1 from '../assets/images/SHPEOFRENDA.jpg';
+import postImg2 from '../assets/images/SHPEACCENTURE.jpg';
+import postImg3 from '../assets/images/SHPENATIONALCONV.jpg';
 
+const slideshowImages = [img0, img1, img2, img3, img4, img5];
+const recentInstagramPosts = [
+  { image: postImg1, link: 'https://www.instagram.com/p/DBrCZOxxnCo/' },
+  { image: postImg2, link: 'https://www.instagram.com/p/DBenHk2xxbf/?img_index=1' },
+  { image: postImg3, link: 'https://www.instagram.com/p/DBefDw7xhCl/' }
+];
 export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
@@ -109,6 +118,23 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+
+      <section id="instagram" className="py-20">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Recent Instagram Posts</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {recentInstagramPosts.map((post, index) => (
+                <a href={post.link} target="_blank" rel="noopener noreferrer" key={index}>
+                  <img
+                    src={post.image}
+                    alt={`Instagram post ${index + 1}`}
+                    className="rounded-lg shadow-lg w-full h-auto"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
 
       <footer className="bg-texas-maroon text-white py-8">
         <div className="container mx-auto px-4">

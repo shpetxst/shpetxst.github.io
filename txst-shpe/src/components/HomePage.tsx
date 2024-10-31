@@ -68,7 +68,24 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="about" className="py-20">
+        <section id="instagram" className="py-20">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Recent Instagram Posts</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {recentInstagramPosts.map((post, index) => (
+                <a href={post.link} target="_blank" rel="noopener noreferrer" key={index}>
+                  <img
+                    src={post.image}
+                    alt={`Instagram post ${index + 1}`}
+                    className="rounded-lg shadow-lg w-full h-auto"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="bg-gray-100 py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">About Us</h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -108,7 +125,7 @@ export default function HomePage() {
         </section>
 
 
-        <section id="contact" className="bg-gray-100 py-20">
+        <section id="contact" className=" py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Get in Touch</h2>
             <p className="mb-8">Have questions or want to learn more? Reach out to us!</p>
@@ -118,23 +135,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
-      <section id="instagram" className="py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8 text-texas-maroon">Recent Instagram Posts</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {recentInstagramPosts.map((post, index) => (
-                <a href={post.link} target="_blank" rel="noopener noreferrer" key={index}>
-                  <img
-                    src={post.image}
-                    alt={`Instagram post ${index + 1}`}
-                    className="rounded-lg shadow-lg w-full h-auto"
-                  />
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
 
       <footer className="bg-texas-maroon text-white py-8">
         <div className="container mx-auto px-4">

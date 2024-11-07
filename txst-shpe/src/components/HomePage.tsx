@@ -1,31 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import img0 from '../assets/images/image000001.jpg';
-import img1 from '../assets/images/IMG_0340.jpg';
-import img2 from '../assets/images/IMG_2770.jpg';
-import img3 from '../assets/images/IMG_9833.jpg';
-import img4 from '../assets/images/IMG_9852.jpg';
-import img5 from '../assets/images/J1A03015.jpeg';
-import homeimg from '../assets/images/IMG_1708.jpg'
-
-// Import recent Instagram post images
-import postImg1 from '../assets/images/SHPEOFRENDA.jpg';
-import postImg2 from '../assets/images/SHPEACCENTURE.jpg';
-import postImg3 from '../assets/images/SHPENATIONALCONV.jpg';
-
-const slideshowImages = [img0, img1, img2, img3, img4, img5];
-const recentInstagramPosts = [
-  { image: postImg1, link: 'https://www.instagram.com/p/DBrCZOxxnCo/' },
-  { image: postImg2, link: 'https://www.instagram.com/p/DBenHk2xxbf/?img_index=1' },
-  { image: postImg3, link: 'https://www.instagram.com/p/DBefDw7xhCl/' }
+// Paths are updated to reference images directly from the public folder
+const slideshowImages = [
+  "/assets/images/image000001.jpg",
+  "/assets/images/IMG_0340.jpg",
+  "/assets/images/IMG_2770.jpg",
+  "/assets/images/IMG_9833.jpg",
+  "/assets/images/IMG_9852.jpg",
+  "/assets/images/J1A03015.jpeg"
 ];
+
+const recentInstagramPosts = [
+  { image: "/assets/images/SHPEOFRENDA.jpg", link: "https://www.instagram.com/p/DBrCZOxxnCo/" },
+  { image: "/assets/images/SHPEACCENTURE.jpg", link: "https://www.instagram.com/p/DBenHk2xxbf/?img_index=1" },
+  { image: "/assets/images/SHPENATIONALCONV.jpg", link: "https://www.instagram.com/p/DBefDw7xhCl/" }
+];
+
 export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         prevIndex === slideshowImages.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
@@ -118,12 +115,11 @@ export default function HomePage() {
                 </ul>
               </div>
               <div>
-                <img src={homeimg} alt="SHPE members collaborating" className="rounded-lg shadow-lg w-full"/>
+                <img src="/assets/images/IMG_1708.jpg" alt="SHPE members collaborating" className="rounded-lg shadow-lg w-full"/>
               </div>
             </div>
           </div>
         </section>
-
 
         <section id="contact" className=" py-20">
           <div className="container mx-auto px-4 text-center">

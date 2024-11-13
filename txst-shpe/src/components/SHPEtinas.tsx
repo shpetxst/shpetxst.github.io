@@ -31,6 +31,7 @@ export default function SHPEtinasPage() {
             </div>
           </div>
         </section>
+        <p className="text-center">More information coming soon!</p>
       </main>
     </div>
   );

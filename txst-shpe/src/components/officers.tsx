@@ -24,7 +24,7 @@ export default function OfficersPage() {
     { name: "Gabriel Ciaburri", position: "Director of Chapter Development", major:"Major in Computer Science", class:"Class of '25", image: "/assets/images/headshots/Gabe_headshot.JPEG?height=200&width=200" },
     { name: "Jimena Gonzalez", position: "Assistant Officer", major:"Major in Industrial Engineering", class:"Class of '26", image: "/assets/images/headshots/Jimena_headshot.PNG?height=200&width=200" },
     { name: "Junior Segura-Ontiveros", position: "Secretary", major:"Major in Manufacturing Engineering", class:"Class of '26", image: "/assets/images/headshots/Junior_headshot.jpg?height=200&width=200" },
-    { name: "Justin Villaseñor", position: "Director of Media", major:"Major in Computer Science", class:"Class of '25", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Justin Villaseñor", position: "Director of Media", major:"Major in Computer Science", class:"Class of '25", image: "/assets/images/headshots/Justin_headshot.jpg?height=200&width=200" },
     { name: "Noemy Cerevantes", position: "Director of Membership", major:"Major in Computer Science", class:"Class of '25", image: "/assets/images/headshots/Noemy_headshot.jpg?height=200&width=200" },
     { name: "Thomas Mendoza", position: "Assistant Officer", major:"Major in Computer Science", class:"Class of '26", image: "/assets/images/headshots/Thomas_headshot.jpg?height=200&width=200" },
     { name: "Xaritzy Cadena", position: "Director of Fundraising", major:"Major in Industrial Engineering", class:"Class of '25", image: "/assets/images/headshots/Xaritzy_headshot.jpg?height=200&width=200" }

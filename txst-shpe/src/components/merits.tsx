@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function MeritsPage() {
   const meritCategories = [
@@ -7,6 +7,21 @@ export default function MeritsPage() {
     { title: 'How can I earn points?', description: 'You can earn points by attending meetings, volunteering, participating in events, and taking on leadership roles. The more involved you are, the higher your score will be on the leaderboard.' },
     { title: 'How can I enter?', description: 'Every dues paying SHPE member is automatically enrolled! Just participate in chapter activities, and your points will be tracked. You can check your progress at every general meeting to see how you’re doing.' },
   ];
+
+  useEffect(() => {
+    const handleResize = (e: MessageEvent) => {
+      if (e.data && e.data.frameHeight && e.data.board_token === '9RGY8uReFXidtYsswMM99Y') {
+        const iframe = document.getElementById("iframe-9RGY8uReFXidtYsswMM99Y") as HTMLIFrameElement | null;
+        if (iframe) {
+          iframe.style.height = `${e.data.frameHeight + 20}px`;
+        }
+      }
+    };
+    window.addEventListener("message", handleResize);
+    return () => {
+      window.removeEventListener("message", handleResize);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-800">
@@ -21,9 +36,17 @@ export default function MeritsPage() {
 
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">Current Merit board</h2>
-            {/* iframe for keepthescore embed here*/}
-            <p>Check back soon to see your progress!</p>
+            {/* <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">Current Merit board</h2> */}
+            {/* TrackScore iframe embed */}
+            <div className="relative" style={{ overflow: 'hidden' }}>
+              <iframe
+                id="iframe-9RGY8uReFXidtYsswMM99Y"
+                src="http://trackscore.online/embed/9RGY8uReFXidtYsswMM99Y"
+                style={{ width: '100%', minHeight: '500px', border: 'none' }}
+                scrolling="no"
+              ></iframe>
+            </div>
+            {/* <p>Check back soon to see your progress!</p> */}
           </div>
         </section>
 

@@ -2,6 +2,7 @@
   "name": "txst-shpe",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shpetxst.github.io/txst-shpe",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.9",
@@ -26,7 +27,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build docs",
+    "predeploy": "npm run build",
+    "deploy": "git add docs && git commit -m 'Deploy to GitHub Pages' && git push origin main",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

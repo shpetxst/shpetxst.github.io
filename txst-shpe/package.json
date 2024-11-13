@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.9",
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.17.0",
@@ -12,7 +13,9 @@
     "@types/node": "^16.18.113",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
+    "emailjs-com": "^3.2.0",
     "eslist": "^1.0.0-beta.1",
+    "lucide-react": "^0.456.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",

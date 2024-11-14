@@ -1,1 +1,0 @@
-# shpetxst.github.io

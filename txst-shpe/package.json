@@ -2,7 +2,7 @@
   "name": "txst-shpe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shpetxst.github.io/txst-shpe",
+  "homepage": "https://shpetxst.github.io/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.9",

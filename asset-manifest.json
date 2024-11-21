@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/txst-shpe/static/css/main.fb6bdcc5.css",
-    "main.js": "/txst-shpe/static/js/main.116e65ba.js",
-    "index.html": "/txst-shpe/index.html",
-    "main.fb6bdcc5.css.map": "/txst-shpe/static/css/main.fb6bdcc5.css.map",
-    "main.116e65ba.js.map": "/txst-shpe/static/js/main.116e65ba.js.map"
+    "main.css": "/static/css/main.fb6bdcc5.css",
+    "main.js": "/static/js/main.b100a52d.js",
+    "index.html": "/index.html",
+    "main.fb6bdcc5.css.map": "/static/css/main.fb6bdcc5.css.map",
+    "main.b100a52d.js.map": "/static/js/main.b100a52d.js.map"
   },
   "entrypoints": [
     "static/css/main.fb6bdcc5.css",
-    "static/js/main.116e65ba.js"
+    "static/js/main.b100a52d.js"
   ]
 }

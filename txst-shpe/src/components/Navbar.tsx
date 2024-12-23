@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'SHPEtinas', href: '/shpetinas' },
   { name: 'Calendar', href: '/calendar'},
+  { name: 'Athletics', href: '/athletics'},
   { name: 'Merits', href: '/merits' },
   { name: 'Officers', href: '/officers' },
   { name: 'Contact Us', href: '/contact' },

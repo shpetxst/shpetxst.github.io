@@ -7,6 +7,7 @@ import CalendarPage from './components/calendar';
 import MeritsPage from './components/merits';
 import OfficersPage from './components/officers';
 import ContactPage from './components/contact';
+import AthleticsPage from './components/athletics';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/merits" element={<MeritsPage />} />
           <Route path="/officers" element={<OfficersPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/athletics" element={<AthleticsPage />} />
         </Routes>
       </div>
     </Router>

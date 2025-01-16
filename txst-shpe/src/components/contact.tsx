@@ -1,10 +1,11 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
-import {MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
-const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+// Load environment variables
+const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID!;
+const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID!;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY!;
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -12,19 +13,23 @@ export default function ContactPage() {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setIsSending(true);
 
+    // Validate environment variables
     if (!serviceID || !templateID || !publicKey) {
-      alert('Error: Missing EmailJS configuration.');
-      setIsSending(false);
+      console.error('Missing EmailJS environment variables.');
+      alert('Email configuration error. Please contact the site administrator.');
       return;
     }
 
+    // Set loading state
+    setIsSending(true);
+
+    // Define template parameters
     const templateParams = {
       from_name: formData.name,
       reply_to: formData.email,
@@ -34,14 +39,22 @@ export default function ContactPage() {
     };
 
     try {
+      // Log template parameters for debugging
+      console.log('Sending email with:', templateParams);
+
+      // Send email using EmailJS
       const result = await emailjs.send(serviceID, templateID, templateParams, publicKey);
-      console.log('Email successfully sent to team:', result);
+
+      console.log('Email sent successfully:', result);
       alert('Message sent successfully!');
+
+      // Reset form fields
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Failed to send email:', error);
       alert('Failed to send message. Please try again.');
     } finally {
+      // Reset loading state
       setIsSending(false);
     }
   };
@@ -127,7 +140,12 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <a href="https://linktr.ee/shpetxst" target="_blank" rel="noopener noreferrer" className="inline-block bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded transition duration-300">
+                    <a
+                      href="https://linktr.ee/shpetxst"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-shpe-blue hover:bg-shpe-dark-blue text-white font-bold py-2 px-4 rounded transition duration-300"
+                    >
                       Visit our Linktree
                     </a>
                   </div>

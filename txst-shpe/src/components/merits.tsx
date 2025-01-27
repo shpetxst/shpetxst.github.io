@@ -41,7 +41,7 @@ export default function MeritsPage() {
             <div className="relative" style={{ overflow: 'hidden' }}>
               <iframe
                 id="iframe-9RGY8uReFXidtYsswMM99Y"
-                src="http://trackscore.online/embed/9RGY8uReFXidtYsswMM99Y"
+                src="https://trackscore.online/embed/9RGY8uReFXidtYsswMM99Y"
                 style={{ width: '100%', minHeight: '500px', border: 'none' }}
                 scrolling="no"
               ></iframe>

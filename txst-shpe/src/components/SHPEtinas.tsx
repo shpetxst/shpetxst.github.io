@@ -18,7 +18,6 @@ export default function SHPEtinasPage() {
     { name: 'Maresa Castañeda', position: 'Vice President', image: '/assets/images/headshots/Maresa_headshot.jpg?height=300&width=300' },
     { name: 'Noemy Cervantes', position: 'Director of Membership', image: '/assets/images/headshots/Noemy_headshot.jpg?height=300&width=200' },
     { name: 'Xaritzy Cadena', position: 'Director of Fundraising', image: '/assets/images/headshots/Xaritzy_headshot.jpg?height=300&width=200' },
-    { name: 'Deslynn Vasquez ', position: 'Director of Events', image: '/assets/images/headshots/Desy_headshot.jpeg?height=200&width=200' },
     { name: 'Gabriel Ciaburri', position: 'Director of Chapter Development', image: '/assets/images/headshots/Gabe_headshot.JPEG?height=200&width=200' },
     { name: 'Jimena Gonzalez', position: 'Assistant Officer', image: '/assets/images/headshots/Jimena_headshot.PNG?height=200&width=200' },
   ];

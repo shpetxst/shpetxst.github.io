@@ -8,12 +8,7 @@ import React from "react";
   > naming convention for each file name should be "name_headshot"
   > path before headshot images: /assets/images/headshots/
   > crop images as needed to make sure they're captured properly 
-    (note: top of head to below the shoulders is recommended, but it depends on the shape of the image, can go lower or higher)
-  
-TODO: 
-Santiago Bolaños 
-computer science Computer engineering concentration 
-2027 grad year 
+    (note: top of head to below the shoulders is recommended, but it depends on the shape of the image, can go lower or higher)å
   */
  }
 

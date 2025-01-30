@@ -35,7 +35,13 @@ export default function Navbar() {
               {/* Logo Section aligned to the left */}
               <div className="flex-1 flex items-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0">
-                  <Link to="/" className="text-white text-xl font-bold">TXST SHPE</Link>
+                  <Link to="/">
+                    <img 
+                      src="/assets/icons/SHPE_logo_horiz_Texas State_KO.PNG" 
+                      alt="TXST SHPE Logo" 
+                      className="h-10 w-auto" 
+                    />
+                  </Link>
                 </div>
               </div>
 

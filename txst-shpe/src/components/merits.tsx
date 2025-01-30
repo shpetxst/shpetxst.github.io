@@ -36,19 +36,29 @@ export default function MeritsPage() {
 
         <section className="py-20">
           <div className="container mx-auto px-4">
-            {/* <h2 className="text-3xl font-bold mb-8 text-center text-texas-maroon">Current Merit board</h2> */}
-            {/* TrackScore iframe embed */}
-            <div className="relative" style={{ overflow: 'hidden' }}>
-              <iframe
-                id="iframe-9RGY8uReFXidtYsswMM99Y"
-                src="https://trackscore.online/embed/9RGY8uReFXidtYsswMM99Y"
-                style={{ width: '100%', minHeight: '500px', border: 'none' }}
-                scrolling="no"
-              ></iframe>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* First TrackScore Embed */}
+              <div className="relative" style={{ overflow: 'hidden' }}>
+                <iframe
+                  id="iframe-9RGY8uReFXidtYsswMM99Y"
+                  src="https://trackscore.online/embed/9RGY8uReFXidtYsswMM99Y"
+                  style={{ width: '100%', minHeight: '500px', border: 'none' }}
+                  scrolling="no"
+                ></iframe>
+              </div>
+
+              {/* Second TrackScore Embed */}
+              <div className="relative" style={{ overflow: 'hidden' }}>
+                <iframe
+                  id="iframe-HgoGhKBDnXff34n6CPmMPp"
+                  src="https://trackscore.online/embed/HgoGhKBDnXff34n6CPmMPp"
+                  style={{ width: '100%', minHeight: '500px', border: 'none' }}
+                  scrolling="no"
+                ></iframe>
+              </div>
             </div>
-            {/* <p>Check back soon to see your progress!</p> */}
           </div>
-        </section>
+          </section>
 
         <section className="bg-gray-100 py-20">
           <div className="container mx-auto px-4">

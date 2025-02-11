@@ -42,8 +42,8 @@ export default function MeritsPage() {
                 <iframe
                   id="iframe-9RGY8uReFXidtYsswMM99Y"
                   src="https://trackscore.online/embed/9RGY8uReFXidtYsswMM99Y"
-                  style={{ width: '100%', minHeight: '500px', border: 'none' }}
-                  scrolling="no"
+                  style={{ width: '100%', minHeight: '400px', border: 'none' }}
+                  scrolling="yes"
                 ></iframe>
               </div>
 
@@ -52,8 +52,8 @@ export default function MeritsPage() {
                 <iframe
                   id="iframe-HgoGhKBDnXff34n6CPmMPp"
                   src="https://trackscore.online/embed/HgoGhKBDnXff34n6CPmMPp"
-                  style={{ width: '100%', minHeight: '500px', border: 'none' }}
-                  scrolling="no"
+                  style={{ width: '100%', minHeight: '400px', border: 'none' }}
+                  scrolling="yes"
                 ></iframe>
               </div>
             </div>

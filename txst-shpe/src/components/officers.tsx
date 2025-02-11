@@ -20,7 +20,7 @@ export default function OfficersPage() {
     { name: "Alberto Rodriguez", position: "External Affairs Executive", major:"Major in Electrical Engineering", class:"Class of '26", image: "/assets/images/headshots/alberto_headshot.JPG?height=200&width=200" },
     { name: "Aldo Guerrero", position: "Director of Information", major:"Major in Computer Science", class:"Class of '25", image: "/assets/images/headshots/Aldo_headshot.jpeg?height=200&width=200" },
     { name: "Edwin Vazquez", position: "Treasurer", major:"Major in Electrical Engineering", class:"Class of '27", image: "/assets/images/headshots/Edwin_headshot.jpg?height=200&width=200" },
-    { name: "Emily Barrera", position: "Director of Media Assistant", major:"Major in Computer Science", class:"Class of '27", image: "/assets/images/headshots/bobcat.png?height=200&width=200" },
+    { name: "Emily Barrera", position: "Director of Media Assistant", major:"Major in Marketing", class:"Class of '26", image: "/assets/images/headshots/Emily_headshot.jpg?height=200&width=200" },
     { name: "Gabriel Ciaburri", position: "Director of Chapter Development", major:"Major in Computer Science", class:"Class of '25", image: "/assets/images/headshots/Gabe_headshot.JPEG?height=200&width=200" },
     { name: "Javier Garcia", position: "External Affairs Assistant", major:"Major in Electrical Engineering", class:"Class of '26", image: "/assets/images/headshots/Javi_headshot.JPG?height=200&width=200" },
     { name: "Jimena Gonzalez", position: "Director of Events", major:"Major in Industrial Engineering", class:"Class of '26", image: "/assets/images/headshots/Jimena_headshot.PNG?height=200&width=200" },
